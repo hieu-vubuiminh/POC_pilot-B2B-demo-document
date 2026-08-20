@@ -1,0 +1,99 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - heading "SoloMatrix Web — Kế toán chia sẻ & Cán bộ hỗ trợ địa bàn" [level=1] [ref=e4]
+      - generic [ref=e5]:
+        - generic [ref=e6]: Trực tuyến
+        - generic [ref=e8]: "Ngày: 17/08/2026"
+        - generic [ref=e9]: "Việc chờ gửi: 0"
+      - navigation [ref=e10]:
+        - link "mobile.html" [ref=e11] [cursor=pointer]:
+          - /url: mobile.html
+        - link "b2g.html" [ref=e12] [cursor=pointer]:
+          - /url: b2g.html
+        - link "index.html" [ref=e13] [cursor=pointer]:
+          - /url: index.html
+  - generic [ref=e15]:
+    - complementary [ref=e16]:
+      - heading "Hộ kinh doanh" [level=2] [ref=e17]
+      - generic [ref=e18]:
+        - generic [ref=e19] [cursor=pointer]:
+          - generic "Có việc gấp" [ref=e20]
+          - generic [ref=e21]:
+            - generic [ref=e22]: Hộ kinh doanh Đặc sản Biển Xanh
+            - text: CD1 · Phường Quy Nhơn · Đồ ăn, đồ uống và đặc sản
+        - generic [ref=e23] [cursor=pointer]:
+          - generic "Có việc gấp" [ref=e24]
+          - generic [ref=e25]:
+            - generic [ref=e26]: Hộ kinh doanh Dịch vụ Du lịch Nhơn Lý
+            - text: CD2 · Xã Nhơn Lý · Dịch vụ du lịch
+        - generic [ref=e27] [cursor=pointer]:
+          - generic "Có việc gấp" [ref=e28]
+          - generic [ref=e29]:
+            - generic [ref=e30]: Hộ kinh doanh Nông sản Chư Păh
+            - text: CD3 · Xã Chư Păh · Nông sản đặc sản
+    - main [ref=e31]:
+      - generic [ref=e32]:
+        - button "Tổng quan nhiều hộ" [ref=e33] [cursor=pointer]
+        - button "Việc cần làm" [ref=e34] [cursor=pointer]
+        - button "Chứng từ và sổ" [ref=e35] [cursor=pointer]
+        - button "Kê khai" [ref=e36] [cursor=pointer]
+        - button "Kết nối kênh" [ref=e37] [cursor=pointer]
+        - button "Bàn giao dữ liệu" [ref=e38] [cursor=pointer]
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - generic [ref=e43]: "3"
+            - generic [ref=e44]: Tổng số hộ
+          - generic [ref=e45]:
+            - generic [ref=e46]: 2,4 tỷ
+            - generic [ref=e47]: Tổng doanh thu từ đầu năm
+          - generic [ref=e48]:
+            - generic [ref=e49]: 37tr
+            - generic [ref=e50]: Tổng thuế tạm tính quý này
+          - generic [ref=e51]:
+            - generic [ref=e52]: "3"
+            - generic [ref=e53]: Số hộ đang kẹt
+        - table [ref=e55]:
+          - rowgroup [ref=e56]:
+            - row [ref=e57]:
+              - columnheader "Hộ" [ref=e58]
+              - columnheader "Địa bàn" [ref=e59]
+              - columnheader "Ngành" [ref=e60]
+              - columnheader "Doanh thu từ đầu năm" [ref=e61]
+              - columnheader "Thuế tạm tính quý này" [ref=e62]
+              - columnheader "Ngày còn tới hạn" [ref=e63]
+              - columnheader "Việc đang kẹt" [ref=e64]
+              - columnheader "Ba cửa" [ref=e65]
+          - rowgroup [ref=e66]:
+            - row [ref=e67] [cursor=pointer]:
+              - cell "Hộ kinh doanh Đặc sản Biển Xanh CD1" [ref=e68]: Hộ kinh doanh Đặc sản Biển XanhCD1
+              - cell "Phường Quy Nhơn" [ref=e69]
+              - cell "Đồ ăn, đồ uống và đặc sản" [ref=e70]
+              - cell "1.020.000.000đ" [ref=e71]
+              - cell "12.825.000đ" [ref=e72]
+              - cell "quá hạn 12 ngày" [ref=e73]
+              - cell "3 việc" [ref=e75]
+              - cell "✓ ✓ ✓ 100% Hoá đơn từ máy tính tiền" [ref=e77]:
+                - text: ✓ ✓ ✓ 100%
+                - generic [ref=e78]: Hoá đơn từ máy tính tiền
+            - row [ref=e79] [cursor=pointer]:
+              - cell "Hộ kinh doanh Dịch vụ Du lịch Nhơn Lý CD2" [ref=e80]: Hộ kinh doanh Dịch vụ Du lịch Nhơn LýCD2
+              - cell "Xã Nhơn Lý" [ref=e81]
+              - cell "Dịch vụ du lịch" [ref=e82]
+              - cell "780.000.000đ" [ref=e83]
+              - cell "19.216.775đ" [ref=e84]
+              - cell "quá hạn 7 ngày" [ref=e85]
+              - cell "2 việc" [ref=e87]
+              - cell "✓ ✓ ○ 60% Sắp vượt ngưỡng" [ref=e89]:
+                - text: ✓ ✓ ○ 60%
+                - generic [ref=e90]: Sắp vượt ngưỡng
+            - row [ref=e91] [cursor=pointer]:
+              - cell "Hộ kinh doanh Nông sản Chư Păh CD3" [ref=e92]: Hộ kinh doanh Nông sản Chư PăhCD3
+              - cell "Xã Chư Păh" [ref=e93]
+              - cell "Nông sản đặc sản" [ref=e94]
+              - cell "607.000.000đ" [ref=e95]
+              - cell "4.732.710đ" [ref=e96]
+              - cell "75 ngày" [ref=e97]
+              - cell "3 việc" [ref=e98]
+              - cell "✓ ✓ ○ 60%" [ref=e100]

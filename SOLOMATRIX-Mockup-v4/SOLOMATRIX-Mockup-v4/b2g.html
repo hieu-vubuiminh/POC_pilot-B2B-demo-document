@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bảng điều khiển Chương trình Kế nghiệp số Gia Lai</title>
+<style>
+:root{
+  --bg:#F4F6F5; --card:#FFF; --sunk:#EAEDEC;
+  --ink:#14191B; --ink2:#48524F; --ink3:#76817E;
+  --line:#DBDFDD; --line2:#BCC3C0;
+  --brand:#0E6360; --brand-soft:#E3EEED; --brand-ink:#0A4A48;
+  --ok:#2C6238; --ok-soft:#E5EFE7;
+  --warn:#8A5B10; --warn-soft:#FAF0DC;
+  --crit:#A32E24; --crit-soft:#F9E7E4;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:15.5px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px 80px}
+
+header{background:var(--brand);color:#fff;padding:20px 0 18px;margin-bottom:22px}
+header .wrap{padding-bottom:0}
+.hgov{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;opacity:.8}
+header h1{margin:6px 0 4px;font-size:clamp(20px,2.6vw,29px);font-weight:670;letter-spacing:-.015em}
+header .sub{font-size:13.5px;opacity:.9}
+header .meta{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:12px;font-size:12.5px;opacity:.92}
+
+section{margin-bottom:26px}
+h2{margin:0 0 4px;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);font-weight:660;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+h2+.lede{margin:0 0 14px;font-size:clamp(18px,2.1vw,23px);font-weight:640;letter-spacing:-.012em;max-width:34ch;text-wrap:balance}
+h3{margin:20px 0 8px;font-size:16px;font-weight:650}
+p{margin:0 0 12px;max-width:76ch}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.card>.hd{display:flex;align-items:center;gap:10px;padding:13px 16px;border-bottom:1px solid var(--line)}
+.card>.hd h4{margin:0;font-size:14.5px;font-weight:660;flex:1}
+.card>.hd .sub{font-size:12px;color:var(--ink3)}
+.card>.bd{padding:14px 16px}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.kpis>div{background:var(--card);padding:14px 16px}
+.kpis .k{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.kpis .v{font-size:26px;font-weight:700;letter-spacing:-.02em;margin-top:3px;font-variant-numeric:tabular-nums}
+.kpis .n{font-size:12px;color:var(--ink3);margin-top:2px}
+.kpis .v.ok{color:var(--ok)} .kpis .v.warn{color:var(--warn)} .kpis .v.crit{color:var(--crit)}
+
+.scrollx{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--sunk);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);font-weight:660;white-space:nowrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+tbody tr:last-child td{border-bottom:none}
+td.r,th.r{text-align:right}
+tfoot td{background:var(--sunk);font-weight:660;border-bottom:none}
+
+.tag{display:inline-block;font-size:10.5px;font-weight:660;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.tag.ok{background:var(--ok-soft);color:var(--ok)}
+.tag.no{background:var(--sunk);color:var(--ink3)}
+.tag.warn{background:var(--warn-soft);color:var(--warn)}
+.tag.crit{background:var(--crit-soft);color:var(--crit)}
+.tag.br{background:var(--brand-soft);color:var(--brand)}
+
+.note{border-radius:10px;padding:12px 14px;font-size:13.5px;line-height:1.5;margin:0 0 12px}
+.note.br{background:var(--brand-soft);color:var(--brand-ink);border:1px solid #B9D8D6}
+.note.warn{background:var(--warn-soft);color:#5E3E08;border:1px solid #EBD5A8}
+.note.crit{background:var(--crit-soft);color:#78221A;border:1px solid #EBBFB8}
+.note.ok{background:var(--ok-soft);color:#1F4A28;border:1px solid #BCD8C3}
+
+.gate{display:flex;align-items:center;gap:7px;font-size:12.5px;padding:3px 0}
+.gate .b{width:18px;height:18px;border-radius:50%;border:2px solid var(--line2);flex:none;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.gate .b.on{background:var(--ok);border-color:var(--ok);color:#fff}
+.bar{height:8px;background:var(--sunk);border-radius:999px;overflow:hidden;min-width:80px}
+.bar>i{display:block;height:100%;background:var(--brand)}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:800px){.two{grid-template-columns:1fr}}
+/* Claude verify 20/08 (C1 Sổ trực trên điện thoại cán bộ): grid item mặc định min-width:auto nên bảng
+   trong .scrollx kéo phình section, trang tràn ngang ở 375px — ép co lại, bảng cuộn TRONG khung của nó. */
+.two>*,.split>*{min-width:0}
+.scrollx{max-width:100%}
+@media(max-width:480px){.wrap{padding:12px 10px}.scrollx table{font-size:12px}}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+@media(max-width:700px){.split{grid-template-columns:1fr}}
+.split>div{background:var(--card);padding:14px 16px}
+.split ul{margin:8px 0 0;padding-left:18px}
+.split li{margin-bottom:6px;font-size:13.5px}
+.yes h5,.no h5{margin:0;font-size:13px;font-weight:680}
+.yes h5{color:var(--ok)} .no h5{color:var(--crit)}
+button{font:inherit;color:inherit;cursor:pointer;min-height:38px;border:1px solid var(--line2);background:var(--card);border-radius:9px;padding:0 13px;font-size:13.5px;font-weight:620}
+button.pri{background:var(--brand);border-color:var(--brand);color:#fff}
+footer{border-top:1px solid var(--line);padding-top:16px;font-size:12.5px;color:var(--ink3)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="hgov" id="hgov">—</div>
+    <h1>Bảng điều khiển Chương trình</h1>
+    <div class="sub" id="hsub">—</div>
+    <div class="meta" id="hmeta"></div>
+  </div>
+</header>
+
+<div id="b2gNav" style="max-width:1180px;margin:0 auto;padding:0 20px 14px;display:flex;gap:8px;align-items:center" aria-label="Chuyển màn hình">
+  <button type="button" class="pri" data-tab="board">Bảng điều khiển</button>
+  <button type="button" data-tab="sotruc">Sổ trực onboarding</button>
+  <span style="font-size:12px;color:var(--ink3)">can bộ dùng — hộ dùng mobile.html</span>
+</div>
+
+<div class="wrap" id="app"></div>
+
+<div class="wrap" id="sotrucWrap" style="display:none">
+  <section id="sotruc"></section>
+</div>
+
+<script src="js/sm-core.js?v=20260820c"></script>
+<script src="js/sm-seed-gialai.js?v=20260820c"></script>
+<script src="js/sm-domain.js?v=20260820c"></script>
+<script src="js/sm-ai.js?v=20260820c"></script>
+<script src="js/sm-program.js?v=20260820c"></script>
+<script>
+(function(){
+'use strict';
+const D=SM.dom,P=SM.prog,F=SM.fmt,E=F.esc;
+const $=s=>document.querySelector(s);
+
+function render(){
+  const cp=SM.db().meta.chuongTrinh;
+  const b=D.programBoard();
+  $('#hgov').textContent=cp.chuTri;
+  $('#hsub').textContent=cp.ten+' — số liệu tổng hợp phục vụ đo lường';
+  $('#hmeta').innerHTML=[
+    'Phối hợp: '+E(cp.phoiHop),
+    'Giai đoạn: '+E(cp.giaiDoan),
+    'Cập nhật: '+E(F.dmy(SM.CLOCK.today)),
+  ].map(x=>'<span>'+x+'</span>').join('');
+
+  let h='';
+
+  /* ═══ 1. BA CỬA THANH TOÁN (IV.7) — điểm mạnh nhất của cổng này ═══ */
+  h+=`<section>
+    <h2>Ràng buộc IV.7 — thanh toán theo kết quả kích hoạt thật</h2>
+    <p class="lede">Chương trình chỉ trả cho phần hộ thật sự đi qua ba cửa.</p>
+    <div class="note br">Căn cứ thanh toán là <b>số hộ đã cài đặt, đã phát hành hoá đơn đầu tiên, và còn phát sinh giao dịch sau 90 ngày</b> — không thanh toán theo số tài khoản phát ra. Bảng dưới đây do hệ thống <b>tự tính từ dữ liệu giao dịch của từng hộ</b>, kể cả phần tự trừ doanh thu của nhà cung cấp.</div>
+    <div class="kpis" style="margin-bottom:14px">
+      <div><div class="k">Hộ tham gia</div><div class="v">${b.tong.soHo}</div><div class="n">khoá thí điểm</div></div>
+      <div><div class="k">Cửa 1 · đã cài đặt</div><div class="v ${b.tong.g1===b.tong.soHo?'ok':'warn'}">${b.tong.g1}/${b.tong.soHo}</div><div class="n">${E(F.pct(b.tong.g1/b.tong.soHo*100,0))}</div></div>
+      <div><div class="k">Cửa 2 · hoá đơn đầu tiên</div><div class="v ${b.tong.g2===b.tong.soHo?'ok':'warn'}">${b.tong.g2}/${b.tong.soHo}</div><div class="n">${E(F.pct(b.tong.g2/b.tong.soHo*100,0))}</div></div>
+      <div><div class="k">Cửa 3 · sau 90 ngày</div><div class="v ${b.tong.g3===b.tong.soHo?'ok':b.tong.g3?'warn':'crit'}">${b.tong.g3}/${b.tong.soHo}</div><div class="n">còn phát sinh giao dịch</div></div>
+      <div><div class="k">Hoá đơn phát sinh</div><div class="v">${E(F.num(b.tong.soHoaDon))}</div><div class="n">từ đầu chương trình</div></div>
+    </div>
+    <div class="scrollx"><table>
+      <thead><tr><th>Hộ kinh doanh</th><th>Địa bàn</th><th>Ngành</th>
+        <th>Kích hoạt</th><th>Hoá đơn đầu</th><th>Mốc 90 ngày</th>
+        <th>Ba cửa</th><th class="r">Tỷ lệ</th><th class="r">Chương trình trả</th></tr></thead>
+      <tbody>${b.rows.map(r=>`<tr>
+        <td><b>${E(r.name)}</b></td>
+        <td>${E(r.diaBan)}</td>
+        <td>${E(r.nganh)}</td>
+        <td class="mono">${r.activatedAt?E(F.dmy(r.activatedAt)):'—'}</td>
+        <td class="mono">${r.hoaDonDauTien?E(F.dmy(r.hoaDonDauTien)):'<span class="tag no">chưa có</span>'}
+          <div style="font-size:11px;color:var(--ink3)">${r.soHoaDon} qua nền tảng${r.soHoaDonTruocChuongTrinh?` · ${r.soHoaDonTruocChuongTrinh} trước Chương trình không tính`:''}</div></td>
+        <td class="mono">${r.moc90?E(F.dmy(r.moc90))+(SM.CLOCK.today>=r.moc90?'':' <span class="tag no">chưa tới</span>'):'—'}</td>
+        <td>${r.gates.map(g=>`<div class="gate"><span class="b ${g.dat?'on':''}">${g.dat?'✓':''}</span><span>${E(g.ten)} <span class="mono" style="color:var(--ink3)">${g.tyLe}%</span></span></div>`).join('')}</td>
+        <td class="r"><b class="num">${r.tyLeThanhToan}%</b><div class="bar" style="margin-top:5px"><i style="width:${r.tyLeThanhToan}%"></i></div></td>
+        <td class="r num"><b>${E(F.d(r.phaiTra))}</b><div style="font-size:11.5px;color:var(--ink3)">trên giá sỉ ${E(F.dShort(r.donGia))}/năm</div></td>
+      </tr>`).join('')}</tbody>
+      <tfoot>
+        <tr><td colspan="8">Chương trình phải trả theo kết quả kích hoạt thật</td><td class="r num">${E(F.d(b.tong.phaiTra))}</td></tr>
+        <tr><td colspan="8" style="color:var(--ink3);font-weight:400">Nếu tính theo số tài khoản phát ra (cách Chương trình đã loại bỏ)</td><td class="r num" style="color:var(--ink3);font-weight:400">${E(F.d(b.tong.neuTinhTheoTaiKhoan))}</td></tr>
+        <tr><td colspan="8" style="color:var(--ok)">Ngân sách KHÔNG phải chi vì hộ chưa qua đủ cửa</td><td class="r num" style="color:var(--ok)">${E(F.d(b.tong.tietKiem))}</td></tr>
+      </tfoot>
+    </table></div>
+    <div class="note ok" style="margin-top:12px">Cơ chế này tự động phạt nhà cung cấp bỏ hộ giữa đường: hộ chết ở cửa 3 thì <b>nhà cung cấp mất 40% doanh thu của hộ đó</b>, không cần điều khoản phạt riêng.</div>
+  </section>`;
+
+  /* ═══ 2. THEO ĐỊA BÀN VÀ THEO NGÀNH (IV.8) ═══ */
+  h+=`<section>
+    <h2>Ràng buộc IV.8 — báo cáo định kỳ, chỉ số liệu tổng hợp</h2>
+    <p class="lede">Doanh thu qua kênh số, tách theo địa bàn và theo ngành.</p>
+    <div class="two">
+      <div class="card"><div class="hd"><h4>Theo địa bàn</h4><span class="sub">${b.theoDiaBan.length} địa bàn</span></div>
+        <div class="scrollx" style="border:none;border-radius:0"><table>
+          <thead><tr><th>Địa bàn</th><th class="r">Hộ</th><th class="r">Hoá đơn</th><th class="r">Doanh thu qua kênh số</th></tr></thead>
+          <tbody>${b.theoDiaBan.map(r=>`<tr><td>${E(r.key)}</td><td class="r num">${r.soHo}</td>
+            <td class="r num">${E(F.num(r.soHoaDon))}</td>
+            <td class="r num">${E(F.dShort(r.doanhThuSo))}<div style="font-size:11px;color:var(--ink3)">${E(F.pct(r.doanhThu?r.doanhThuSo/r.doanhThu*100:0,0))} tổng doanh thu</div></td></tr>`).join('')}
+          </tbody></table></div></div>
+      <div class="card"><div class="hd"><h4>Theo ngành</h4><span class="sub">${b.theoNganh.length} ngành ưu tiên</span></div>
+        <div class="scrollx" style="border:none;border-radius:0"><table>
+          <thead><tr><th>Ngành</th><th class="r">Hộ</th><th class="r">Hoá đơn</th><th class="r">Doanh thu qua kênh số</th></tr></thead>
+          <tbody>${b.theoNganh.map(r=>`<tr><td>${E(r.key)}</td><td class="r num">${r.soHo}</td>
+            <td class="r num">${E(F.num(r.soHoaDon))}</td>
+            <td class="r num">${E(F.dShort(r.doanhThuSo))}<div style="font-size:11px;color:var(--ink3)">${E(F.pct(r.doanhThu?r.doanhThuSo/r.doanhThu*100:0,0))} tổng doanh thu</div></td></tr>`).join('')}
+          </tbody></table></div></div>
+    </div>
+    <div class="note br" style="margin-top:12px"><b>Chuẩn kết nối:</b> Chương trình nhận dữ liệu theo lịch cố định qua một đầu mối duy nhất, định dạng thống nhất, có ký số bản báo cáo và mã băm để đối chiếu. Số liệu ở trên là <b>bản tổng hợp</b>; nền tảng không đẩy bản chi tiết ra ngoài kể cả khi được yêu cầu qua kênh không chính thức.</div>
+  </section>`;
+
+  /* ═══ 3. COHORT SỐNG (II.3) ═══ */
+  const ch=D.cohort();
+  h+=`<section>
+    <h2>Nguyên tắc II.3 — đo bằng giao dịch thật</h2>
+    <p class="lede">Còn hoạt động sau 12 và 24 tháng, không phải số tài khoản phát ra.</p>
+    <div class="scrollx"><table>
+      <thead><tr><th>Khoá</th><th class="r">Bắt đầu</th><th class="r">3 tháng</th><th class="r">6 tháng</th><th class="r">12 tháng</th><th class="r">24 tháng</th><th class="r">Còn hoạt động</th><th>Ghi chú</th></tr></thead>
+      <tbody>${ch.map(r=>`<tr><td><b>${E(r.khoa)}</b></td>
+        <td class="r num">${E(F.num(r.batDau))}</td>
+        ${['thang3','thang6','thang12','thang24'].map(k=>`<td class="r num">${r[k]===null||r[k]===undefined?'<span class="tag no">chưa tới</span>':E(F.num(r[k]))}</td>`).join('')}
+        <td class="r num"><b>${E(F.num(r.conHoatDong))}</b> <span class="tag ${r.tyLe>=80?'ok':r.tyLe>0?'warn':'no'}">${E(F.pct(r.tyLe,0))}</span></td>
+        <td style="color:var(--ink3)">${E(r.ghiChu)}</td></tr>`).join('')}
+      </tbody></table></div>
+    <div class="note warn" style="margin-top:12px"><b>Đọc thẳng:</b> khoá thí điểm mới chạy nên chỉ có mốc 3 tháng là số thật; các mốc còn lại để trống chứ không điền số kế hoạch vào ô đo lường. Nhà cung cấp nào đưa số 12 và 24 tháng ngay từ bây giờ là đang trình bày chỉ tiêu, không phải kết quả.</div>
+  </section>`;
+
+  /* ═══ 4. CHỈ SỐ SỐNG ĐỀ XUẤT (V.5) ═══ */
+  h+=`<section>
+    <h2>Tư vấn ngược V.5 — chỉ số phản ánh khả năng "sống"</h2>
+    <p class="lede">${E(P.CHI_SO_SONG.cauHoi)}</p>
+    <div class="note br">${E(P.CHI_SO_SONG.phanBien)}</div>
+    <div class="scrollx"><table>
+      <thead><tr><th>Chỉ số đề xuất thêm</th><th>Vì sao chỉ số này</th><th class="r">Mức tốt</th></tr></thead>
+      <tbody>${P.CHI_SO_SONG.deXuat.map(x=>`<tr><td><b>${E(x.ten)}</b></td><td style="color:var(--ink2)">${E(x.vi)}</td><td class="r mono">${E(x.doTot)}</td></tr>`).join('')}
+      </tbody></table></div>
+  </section>`;
+
+  /* ═══ 5. RANH GIỚI DỮ LIỆU (IV.8 + PDPL) ═══ */
+  h+=`<section>
+    <h2>Ràng buộc IV.8 — bảo vệ dữ liệu cá nhân</h2>
+    <p class="lede">Dữ liệu chi tiết thuộc về hộ. Chương trình chỉ nhận tổng hợp.</p>
+    <div class="card"><div class="split">
+      <div class="yes"><h5>✓ Chương trình ĐƯỢC XEM</h5><ul>
+        <li>Số hộ đã kích hoạt, theo địa bàn và theo ngành</li>
+        <li>Số hoá đơn phát sinh (đếm, không kèm nội dung)</li>
+        <li>Doanh thu qua kênh số ở dạng tổng hợp</li>
+        <li>Trạng thái ba cửa thanh toán của từng hộ</li>
+        <li>Tỷ lệ kỳ kê khai đúng hạn ở dạng tổng hợp</li>
+        <li>Hộ còn hoạt động theo mốc thời gian</li>
+      </ul></div>
+      <div class="no"><h5>✕ Chương trình KHÔNG ĐƯỢC XEM</h5><ul>
+        <li>Chi tiết từng đơn hàng, từng khách hàng của hộ</li>
+        <li>Danh sách nhà cung cấp và giá vốn của hộ</li>
+        <li>Nội dung tin nhắn giữa hộ và khách</li>
+        <li>Thông tin định danh nông dân trong bảng kê thu mua</li>
+        <li>Công nợ theo từng khách hàng cụ thể</li>
+        <li>Bất kỳ dữ liệu nào không nằm ở cột bên trái</li>
+      </ul></div>
+    </div></div>
+    <div class="note crit" style="margin-top:12px"><b>Trích xuất dữ liệu chi tiết chỉ theo yêu cầu có thẩm quyền.</b> Mỗi lượt trích xuất phải có: văn bản yêu cầu, phạm vi và thời hạn cụ thể, người yêu cầu định danh, và <b>hộ được thông báo</b>. Mọi lượt trích xuất ghi vào sổ kiểm chứng, không xoá được.</div>
+    <div class="note ok">${E(SM.db().meta.ghiChuPDPL)} Hộ có quyền xuất toàn bộ dữ liệu của mình bất cứ lúc nào để chuyển nhà cung cấp — xem trong ứng dụng của hộ.</div>
+  </section>`;
+
+  /* ═══ 6. BẢN ĐỒ CHỒNG LẤN (IV.2) ═══ */
+  h+=`<section>
+    <h2>Ràng buộc IV.2 — tránh trùng lặp với nền tảng miễn phí quốc gia</h2>
+    <p class="lede">${E(P.CHONG_LAN.cauHoi)}</p>
+    <div class="note br">${E(P.CHONG_LAN.nguyenTac)}</div>
+    <div class="scrollx"><table>
+      <thead><tr><th>Cấu phần</th><th>Hiện nay làm gì</th><th>Khi nền tảng dùng chung vận hành</th><th class="r">Xử lý</th></tr></thead>
+      <tbody>${P.CHONG_LAN.dong.map(d=>{
+        const m={tat:['crit','TẮT'],giao:['warn','GIAO LẠI'],giu:['ok','GIỮ']}[d.mucDo];
+        return `<tr><td><b>${E(d.cauPhan)}</b></td><td style="color:var(--ink2)">${E(d.hienTai)}</td>
+          <td style="color:var(--ink2)">${E(d.khiCoNenTangQuocGia)}</td>
+          <td class="r"><span class="tag ${m[0]}">${m[1]}</span></td></tr>`;
+      }).join('')}</tbody></table></div>
+  </section>`;
+
+  /* ═══ 7. SỔ KIỂM CHỨNG ═══ */
+  const q=SM.queue();
+  h+=`<section>
+    <h2>Sổ kiểm chứng</h2>
+    <p class="lede">Mỗi lượt báo cáo có mã băm nối chuỗi, sửa lại là lệch ngay.</p>
+    <div class="card"><div class="bd">
+      <div class="note br">Mỗi bản báo cáo định kỳ được băm cùng mã băm của bản trước, tạo thành chuỗi. Muốn sửa một số liệu quá khứ thì phải băm lại toàn bộ chuỗi phía sau — nên phát hiện được ngay. Bản mockup dùng hàm băm rút gọn; bản thật dùng SHA-256.</div>
+      <div class="scrollx" style="border:none"><table>
+        <thead><tr><th>Kỳ báo cáo</th><th>Số hộ</th><th>Số hoá đơn</th><th>Mã băm</th><th>Nối với kỳ trước</th></tr></thead>
+        <tbody>${(()=>{
+          let prev='0000000000';
+          return ['06/2026','07/2026','08/2026'].map((k,i)=>{
+            const payload=k+'|'+b.tong.soHo+'|'+(b.tong.soHoaDon-((2-i)*7))+'|'+prev;
+            const hv=SM.hash(payload).toString(16).padStart(8,'0');
+            const row=`<tr><td class="mono">${E(k)}</td><td class="num">${b.tong.soHo}</td>
+              <td class="num">${E(F.num(Math.max(0,b.tong.soHoaDon-((2-i)*7))))}</td>
+              <td class="mono" style="font-size:12px">${E(hv)}</td>
+              <td class="mono" style="font-size:12px;color:var(--ink3)">${E(prev)}</td></tr>`;
+            prev=hv; return row;
+          }).join('');
+        })()}</tbody></table></div>
+    </div></div>
+  </section>`;
+
+  /* ═══ 8. TRẠNG THÁI GỬI DỮ LIỆU ═══ */
+  h+=`<section>
+    <h2>Tình trạng đường truyền</h2>
+    <p class="lede">Nhìn thấy được khi nào dữ liệu chưa lên.</p>
+    <div class="kpis">
+      <div><div class="k">Kết nối</div><div class="v ${SM.isOnline()?'ok':'crit'}" style="font-size:19px">${SM.isOnline()?'Có mạng':'Mất mạng'}</div><div class="n">trạng thái phía hộ</div></div>
+      <div><div class="k">Việc chờ gửi</div><div class="v ${SM.queueCount()?'warn':'ok'}">${SM.queueCount()}</div><div class="n">tự gửi khi có mạng lại</div></div>
+      <div><div class="k">Đã gửi xong</div><div class="v ok">${q.filter(j=>j.state==='done').length}</div><div class="n">trong phiên này</div></div>
+    </div>
+    <div class="note warn" style="margin-top:12px">Địa bàn miền núi có lúc mất mạng. Nguyên tắc: hộ <b>vẫn bán được</b>, dữ liệu xếp hàng đợi và tự lên khi có mạng — cổng Chương trình hiện rõ số việc đang chờ thay vì im lặng để tưởng là đã đủ.</div>
+  </section>`;
+
+  h+=`<footer>
+    <p><b>${E(cp.ten)}</b> · ${E(cp.chuTri)} · Số liệu tổng hợp cập nhật ${E(F.dmy(SM.CLOCK.today))}.</p>
+    <p>Đây là bản mô phỏng phục vụ đối thoại thị trường. Số liệu ba hộ là dữ liệu mẫu của ba chân dung nêu trong Bài toán đặt hàng, được tính từ giao dịch mô phỏng chứ không phải số nhập tay.</p>
+    <p style="margin-top:10px"><button onclick="SM.resetAll();location.reload()">Nạp lại dữ liệu mẫu</button>
+      <button class="pri" onclick="location.href='mobile.html'" style="margin-left:8px">Mở ứng dụng của hộ</button>
+      <button onclick="location.href='index.html'" style="margin-left:8px">Mở hồ sơ giải pháp</button></p>
+  </footer>`;
+
+  $('#app').innerHTML=h;
+}
+
+SM.db(); render();
+SM.on('queue:change',render); SM.on('net:change',render); SM.on('db:external',render);
+})();
+</script>
+<script src="js/sm-inbox.js?v=20260820c"></script>
+<script src="js/sm-seed-b2g.js?v=20260820c"></script>
+<script src="js/sm-b2g.js?v=20260820c"></script>
+</body>
+</html>

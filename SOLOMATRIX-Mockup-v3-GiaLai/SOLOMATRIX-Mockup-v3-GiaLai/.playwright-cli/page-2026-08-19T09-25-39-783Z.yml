@@ -1,0 +1,175 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - button "Đổi chân dung hộ" [ref=e5] [cursor=pointer]: ☰
+      - generic [ref=e6]:
+        - generic [ref=e7]: Hộ kinh doanh Đặc sản Biển Xanh
+        - generic [ref=e8]: CD1 · Phường Quy Nhơn · Đồ ăn, đồ uống và đặc sản
+      - button "Đổi cỡ chữ" [ref=e9] [cursor=pointer]: Aa
+    - generic [ref=e10]:
+      - generic [ref=e12]: Có mạng — dữ liệu đang gửi lên
+      - button "✈︎ Chế độ máy bay" [ref=e13] [cursor=pointer]
+      - generic [ref=e14]: đã gửi hết
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - heading "Việc cần để ý" [level=2] [ref=e18]
+        - generic [ref=e19]: 4 mục
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - generic [ref=e22]: quá hạn
+          - generic [ref=e23]:
+            - generic [ref=e24]: 2 khoản công nợ quá hạn
+            - generic [ref=e25]: 27.650.000đ
+            - generic [ref=e26]: Hạn 05/08/2026
+          - button "Xem" [ref=e27] [cursor=pointer]
+        - generic [ref=e28]:
+          - generic [ref=e29]: 75 ngày
+          - generic [ref=e30]:
+            - generic [ref=e31]: Kê khai và nộp thuế quý 3/2026
+            - generic [ref=e32]: 12.825.000đ
+            - generic [ref=e33]: Hạn 31/10/2026
+          - button "Xem" [ref=e34] [cursor=pointer]
+        - generic [ref=e35]:
+          - generic [ref=e36]: "!"
+          - generic [ref=e37]: 3 đơn chưa xử lý
+          - button "Xem" [ref=e39] [cursor=pointer]
+        - generic [ref=e40]:
+          - generic [ref=e41]: 80 ngày
+          - generic [ref=e42]:
+            - generic [ref=e43]: Giấy chứng nhận cơ sở đủ điều kiện an toàn thực phẩm hết hạn sau 80 ngày
+            - generic [ref=e44]: Hạn 05/11/2026
+          - button "Xem" [ref=e45] [cursor=pointer]
+    - generic [ref=e47]:
+      - generic [ref=e48]: Thu hôm nay 17/08/2026
+      - generic [ref=e49]: 2.540.000đ
+      - generic [ref=e50]: 5 lượt thanh toán tại 2/2 điểm
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - heading "Doanh thu các điểm" [level=2] [ref=e53]
+        - generic [ref=e54]: hợp nhất theo thời gian thực
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]: Quầy đặc sản
+            - generic [ref=e59]: Cửa hàng mặt đường · 3 lượt
+          - generic [ref=e60]: 1,7tr
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - generic [ref=e63]: Gian hàng chợ đêm
+            - generic [ref=e64]: Khu ẩm thực ven biển, mùa cao điểm · 2 lượt
+          - generic [ref=e65]: 825k
+    - generic [ref=e66]: Hộ thuộc diện dùng hoá đơn điện tử khởi tạo từ máy tính tiền — doanh thu đầu năm 1.020.000.000đ, trên ngưỡng 1,0 tỷ.
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - heading "Bán tại quầy" [level=2] [ref=e69]
+        - generic [ref=e70]: trực tuyến
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - generic [ref=e75]: Cá cơm khô loại 1
+              - generic [ref=e76]:
+                - text: 185.000đ/kg · còn 260
+                - generic [ref=e77]: giữ 40
+            - button "＋" [ref=e79] [cursor=pointer]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e82]: Mực khô một nắng
+              - generic [ref=e83]:
+                - text: 620.000đ/kg · còn 37
+                - generic [ref=e84]: giữ 5
+            - button "＋" [ref=e86] [cursor=pointer]
+          - generic [ref=e87]:
+            - generic [ref=e88]:
+              - generic [ref=e89]: Nước mắm nhĩ 500ml
+              - generic [ref=e90]:
+                - text: 95.000đ/chai · còn 600
+                - generic [ref=e91]: giữ 40
+            - button "＋" [ref=e93] [cursor=pointer]
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - generic [ref=e96]: Tôm khô bóc vỏ
+              - generic [ref=e97]: 780.000đ/kg · còn 16
+            - button "＋" [ref=e99] [cursor=pointer]
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - generic [ref=e102]:
+                - text: Cá mắm chưng thịt hộp
+                - generic [ref=e103]: giữ lạnh
+              - generic [ref=e104]: 68.000đ/hộp · còn 210
+            - button "＋" [ref=e106] [cursor=pointer]
+        - generic [ref=e107]: Chạm ＋ để thêm món. Bán hàng không cần mạng — hoá đơn xếp hàng đợi, tự gửi khi có mạng lại.
+    - generic [ref=e108]:
+      - generic [ref=e109]:
+        - heading "Hoá đơn gần nhất" [level=2] [ref=e110]
+        - generic [ref=e111]: trạng thái truyền cơ quan thuế
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - generic [ref=e115]: HD-2608-018
+            - generic [ref=e116]: 07/08/2026 · Khu nghỉ dưỡng Nhơn Hội · MST 4110632409 · M2026-585474
+          - generic [ref=e117]:
+            - generic [ref=e118]: 9,2tr
+            - generic [ref=e119]: đã truyền
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - generic [ref=e122]: HD-2608-017
+            - generic [ref=e123]: 17/08/2026 · Khách sạn Hải Âu · MST 4117801838 · M2026-686809
+          - generic [ref=e124]:
+            - generic [ref=e125]: 30tr
+            - generic [ref=e126]: đã truyền
+        - generic [ref=e127]:
+          - generic [ref=e128]:
+            - generic [ref=e129]: HD-2607-016
+            - generic [ref=e130]: 12/07/2026 · Nhà hàng Gành Ráng · MST 4118059480 · M2026-744528
+          - generic [ref=e131]:
+            - generic [ref=e132]: 12tr
+            - generic [ref=e133]: đã truyền
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - generic [ref=e136]: HD-2607-015
+            - generic [ref=e137]: 31/07/2026 · Khách sạn Bãi Xép · MST 4110679917 · M2026-970735
+          - generic [ref=e138]:
+            - generic [ref=e139]: 26tr
+            - generic [ref=e140]: đã truyền
+        - generic [ref=e141]:
+          - generic [ref=e142]:
+            - generic [ref=e143]: HD-2607-014
+            - generic [ref=e144]: 25/07/2026 · Nhà hàng Hương Biển · MST 4111190004 · M2026-108611
+          - generic [ref=e145]:
+            - generic [ref=e146]: 32tr
+            - generic [ref=e147]: đã truyền
+        - generic [ref=e148]:
+          - generic [ref=e149]:
+            - generic [ref=e150]: HD-2607-013
+            - generic [ref=e151]: 28/07/2026 · Nhà hàng Gành Ráng · MST 4115536239 · M2026-118791
+          - generic [ref=e152]:
+            - generic [ref=e153]: 86tr
+            - generic [ref=e154]: đã truyền
+    - generic [ref=e155]:
+      - generic [ref=e156]:
+        - heading "Đơn từ kênh khác đến bằng cách nào" [level=2] [ref=e157]
+        - generic [ref=e158]: không phải hộ tự gõ
+      - generic [ref=e159]:
+        - generic [ref=e160]: Khách đặt trên sàn thì sàn đẩy đơn về qua webhook; hệ thống kiểm tồn rồi mới nhận, thiếu hàng là từ chối. Xem toàn bộ đường đi và tự bấm giả lập ở Hộp thư đến.
+        - button "Mở Hộp thư đến" [ref=e161] [cursor=pointer]
+  - button "Hỏi trợ lý" [ref=e162] [cursor=pointer]: 💬
+  - navigation [ref=e163]:
+    - button "🛒 Bán" [ref=e164] [cursor=pointer]:
+      - generic [ref=e165]: 🛒
+      - text: Bán
+    - button "📦 Kho" [ref=e166] [cursor=pointer]:
+      - generic [ref=e167]: 📦
+      - text: Kho
+    - button "🚚 Đơn 3" [ref=e168] [cursor=pointer]:
+      - generic [ref=e169]: 🚚
+      - text: Đơn
+      - generic [ref=e170]: "3"
+    - button "💰 Tiền 3" [ref=e171] [cursor=pointer]:
+      - generic [ref=e172]: 💰
+      - text: Tiền
+      - generic [ref=e173]: "3"
+    - button "⋯ Thêm" [ref=e174] [cursor=pointer]:
+      - generic [ref=e175]: ⋯
+      - text: Thêm

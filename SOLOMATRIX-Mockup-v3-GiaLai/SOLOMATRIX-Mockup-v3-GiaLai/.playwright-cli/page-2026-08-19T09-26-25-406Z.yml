@@ -1,0 +1,200 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - heading "SoloMatrix Web — Kế toán chia sẻ & Cán bộ hỗ trợ địa bàn" [level=1] [ref=e4]
+      - generic [ref=e5]:
+        - generic [ref=e101]: Trực tuyến
+        - generic [ref=e103]: "Ngày: 17/08/2026"
+        - generic [ref=e104]: "Việc chờ gửi: 0"
+      - navigation [ref=e10]:
+        - link "mobile.html" [ref=e11] [cursor=pointer]:
+          - /url: mobile.html
+        - link "b2g.html" [ref=e12] [cursor=pointer]:
+          - /url: b2g.html
+        - link "index.html" [ref=e13] [cursor=pointer]:
+          - /url: index.html
+  - generic [ref=e15]:
+    - complementary [ref=e16]:
+      - heading "Hộ kinh doanh" [level=2] [ref=e17]
+      - generic [ref=e18]:
+        - generic [ref=e105] [cursor=pointer]:
+          - generic "Có việc gấp" [ref=e106]
+          - generic [ref=e107]:
+            - generic [ref=e108]: Hộ kinh doanh Đặc sản Biển Xanh
+            - text: CD1 · Phường Quy Nhơn · Đồ ăn, đồ uống và đặc sản
+        - generic [ref=e109] [cursor=pointer]:
+          - generic "Có việc gấp" [ref=e110]
+          - generic [ref=e111]:
+            - generic [ref=e112]: Hộ kinh doanh Dịch vụ Du lịch Nhơn Lý
+            - text: CD2 · Xã Nhơn Lý · Dịch vụ du lịch
+        - generic [ref=e113] [cursor=pointer]:
+          - generic "Có việc gấp" [ref=e114]
+          - generic [ref=e115]:
+            - generic [ref=e116]: Hộ kinh doanh Nông sản Chư Păh
+            - text: CD3 · Xã Chư Păh · Nông sản đặc sản
+    - main [ref=e31]:
+      - generic [ref=e32]:
+        - button "Tổng quan nhiều hộ" [ref=e117] [cursor=pointer]
+        - button "Việc cần làm" [ref=e118] [cursor=pointer]
+        - button "Chứng từ và sổ" [ref=e119] [cursor=pointer]
+        - button "Kê khai" [ref=e120] [cursor=pointer]
+        - button "Kết nối kênh" [ref=e121] [cursor=pointer]
+        - button "Bàn giao dữ liệu" [ref=e122] [cursor=pointer]
+      - generic [ref=e123]:
+        - heading "Hoá đơn — Hộ kinh doanh Đặc sản Biển Xanh" [level=3] [ref=e124]
+        - table [ref=e126]:
+          - rowgroup [ref=e127]:
+            - row [ref=e128]:
+              - columnheader "Mã" [ref=e129]
+              - columnheader "Ngày" [ref=e130]
+              - columnheader "Người mua" [ref=e131]
+              - columnheader "Tiền" [ref=e132]
+              - columnheader "Trạng thái truyền CQT" [ref=e133]
+              - columnheader "Mã CQT" [ref=e134]
+          - rowgroup [ref=e135]:
+            - row [ref=e136]:
+              - cell [ref=e137]
+              - cell [ref=e138]
+              - cell "—" [ref=e139]
+              - cell "0đ" [ref=e140]
+              - cell "Đã gửi" [ref=e141]
+              - cell "M2026-830614" [ref=e143]
+            - row [ref=e144]:
+              - cell [ref=e145]
+              - cell [ref=e146]
+              - cell "—" [ref=e147]
+              - cell "0đ" [ref=e148]
+              - cell "Đã gửi" [ref=e149]
+              - cell "M2026-689100" [ref=e151]
+            - row [ref=e152]:
+              - cell [ref=e153]
+              - cell [ref=e154]
+              - cell "—" [ref=e155]
+              - cell "0đ" [ref=e156]
+              - cell "Đã gửi" [ref=e157]
+              - cell "M2026-372633" [ref=e159]
+            - row [ref=e160]:
+              - cell [ref=e161]
+              - cell [ref=e162]
+              - cell "—" [ref=e163]
+              - cell "0đ" [ref=e164]
+              - cell "Đã gửi" [ref=e165]
+              - cell "M2026-509040" [ref=e167]
+            - row [ref=e168]:
+              - cell [ref=e169]
+              - cell [ref=e170]
+              - cell "—" [ref=e171]
+              - cell "0đ" [ref=e172]
+              - cell "Đã gửi" [ref=e173]
+              - cell "M2026-946924" [ref=e175]
+            - row [ref=e176]:
+              - cell [ref=e177]
+              - cell [ref=e178]
+              - cell "—" [ref=e179]
+              - cell "0đ" [ref=e180]
+              - cell "Đã gửi" [ref=e181]
+              - cell "M2026-353751" [ref=e183]
+            - row [ref=e184]:
+              - cell [ref=e185]
+              - cell [ref=e186]
+              - cell "—" [ref=e187]
+              - cell "0đ" [ref=e188]
+              - cell "Đã gửi" [ref=e189]
+              - cell "M2026-882953" [ref=e191]
+            - row [ref=e192]:
+              - cell [ref=e193]
+              - cell [ref=e194]
+              - cell "—" [ref=e195]
+              - cell "0đ" [ref=e196]
+              - cell "Đã gửi" [ref=e197]
+              - cell "M2026-297833" [ref=e199]
+            - row [ref=e200]:
+              - cell [ref=e201]
+              - cell [ref=e202]
+              - cell "—" [ref=e203]
+              - cell "0đ" [ref=e204]
+              - cell "Đã gửi" [ref=e205]
+              - cell "M2026-838807" [ref=e207]
+            - row [ref=e208]:
+              - cell [ref=e209]
+              - cell [ref=e210]
+              - cell "—" [ref=e211]
+              - cell "0đ" [ref=e212]
+              - cell "Đã gửi" [ref=e213]
+              - cell "M2026-353068" [ref=e215]
+            - row [ref=e216]:
+              - cell [ref=e217]
+              - cell [ref=e218]
+              - cell "—" [ref=e219]
+              - cell "0đ" [ref=e220]
+              - cell "Đã gửi" [ref=e221]
+              - cell "M2026-294752" [ref=e223]
+            - row [ref=e224]:
+              - cell [ref=e225]
+              - cell [ref=e226]
+              - cell "—" [ref=e227]
+              - cell "0đ" [ref=e228]
+              - cell "Đã gửi" [ref=e229]
+              - cell "M2026-428307" [ref=e231]
+            - row [ref=e232]:
+              - cell [ref=e233]
+              - cell [ref=e234]
+              - cell "—" [ref=e235]
+              - cell "0đ" [ref=e236]
+              - cell "Đã gửi" [ref=e237]
+              - cell "M2026-118791" [ref=e239]
+            - row [ref=e240]:
+              - cell [ref=e241]
+              - cell [ref=e242]
+              - cell "—" [ref=e243]
+              - cell "0đ" [ref=e244]
+              - cell "Đã gửi" [ref=e245]
+              - cell "M2026-108611" [ref=e247]
+            - row [ref=e248]:
+              - cell [ref=e249]
+              - cell [ref=e250]
+              - cell "—" [ref=e251]
+              - cell "0đ" [ref=e252]
+              - cell "Đã gửi" [ref=e253]
+              - cell "M2026-970735" [ref=e255]
+            - row [ref=e256]:
+              - cell [ref=e257]
+              - cell [ref=e258]
+              - cell "—" [ref=e259]
+              - cell "0đ" [ref=e260]
+              - cell "Đã gửi" [ref=e261]
+              - cell "M2026-744528" [ref=e263]
+            - row [ref=e264]:
+              - cell [ref=e265]
+              - cell [ref=e266]
+              - cell "—" [ref=e267]
+              - cell "0đ" [ref=e268]
+              - cell "Đã gửi" [ref=e269]
+              - cell "M2026-686809" [ref=e271]
+            - row [ref=e272]:
+              - cell [ref=e273]
+              - cell [ref=e274]
+              - cell "—" [ref=e275]
+              - cell "0đ" [ref=e276]
+              - cell "Đã gửi" [ref=e277]
+              - cell "M2026-585474" [ref=e279]
+        - heading "Bảng kê thu mua" [level=3] [ref=e280]
+        - generic [ref=e281]: Hộ không có bảng kê thu mua.
+        - table [ref=e283]:
+          - rowgroup [ref=e284]:
+            - row [ref=e285]:
+              - columnheader "Sổ" [ref=e286]
+              - columnheader "Tên" [ref=e287]
+              - columnheader "Số dòng" [ref=e288]
+              - columnheader "Tổng" [ref=e289]
+          - rowgroup [ref=e290]:
+            - row [ref=e291]:
+              - cell "S1a" [ref=e292]
+              - cell "Sổ nhóm doanh thu không chịu thuế" [ref=e293]
+              - cell "0" [ref=e294]
+              - cell "0đ" [ref=e295]
+            - row [ref=e296]:
+              - cell "S2a" [ref=e297]
+              - cell "Sổ nhóm chịu thuế GTGT và TNCN trực tiếp trên doanh thu" [ref=e298]
+              - cell "12" [ref=e299]
+              - cell "285.000.000đ" [ref=e300]

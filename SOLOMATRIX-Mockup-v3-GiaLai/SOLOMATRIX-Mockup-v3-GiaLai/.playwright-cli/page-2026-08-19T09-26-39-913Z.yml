@@ -1,0 +1,262 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Đối thoại thị trường · Chương trình Kế nghiệp số Gia Lai
+      - heading "Hồ sơ giải pháp" [level=1] [ref=e5]
+      - generic [ref=e6]: Bản mô phỏng để hội đồng đối chiếu trực tiếp với Bài toán đặt hàng. Mọi mục dưới đây neo về số điều khoản của chính bài toán, và mọi con số đều tính từ dữ liệu ba chân dung chứ không nhập tay.
+  - navigation [ref=e7]:
+    - generic [ref=e8]:
+      - button "Ba chân dung, bốn mốc Mục III" [ref=e9] [cursor=pointer]:
+        - text: Ba chân dung, bốn mốc
+        - generic [ref=e10]: Mục III
+      - button "Giá và mô hình giá IV.9 · V.2" [ref=e11] [cursor=pointer]:
+        - text: Giá và mô hình giá
+        - generic [ref=e12]: IV.9 · V.2
+      - button "Hệ sinh thái kết nối IV.3" [ref=e13] [cursor=pointer]:
+        - text: Hệ sinh thái kết nối
+        - generic [ref=e14]: IV.3
+      - button "Đội tại chỗ IV.6 · V.3" [ref=e15] [cursor=pointer]:
+        - text: Đội tại chỗ
+        - generic [ref=e16]: IV.6 · V.3
+      - button "Nhân rộng V.1" [ref=e17] [cursor=pointer]:
+        - text: Nhân rộng
+        - generic [ref=e18]: V.1
+      - button "Kịch bản demo VI.1(e)" [ref=e19] [cursor=pointer]:
+        - text: Kịch bản demo
+        - generic [ref=e20]: VI.1(e)
+      - button "Ma trận đối chiếu toàn bộ Mục IV" [ref=e21] [cursor=pointer]:
+        - text: Ma trận đối chiếu
+        - generic [ref=e22]: toàn bộ Mục IV
+      - button "Bản đồ màn hình toàn sản phẩm" [ref=e23] [cursor=pointer]:
+        - text: Bản đồ màn hình
+        - generic [ref=e24]: toàn sản phẩm
+      - button "Đường đi dữ liệu IV.3 · IV.4" [ref=e25] [cursor=pointer]:
+        - text: Đường đi dữ liệu
+        - generic [ref=e26]: IV.3 · IV.4
+  - generic [ref=e27]:
+    - generic [ref=e28]:
+      - heading "Mục III — ba chân dung, mỗi chân dung bốn mốc" [level=2] [ref=e29]
+      - paragraph [ref=e30]: Hộ dùng gì, ai cài, ai đào tạo, mất bao nhiêu phút, tốn bao nhiêu, và vì sao có thể bỏ cuộc.
+      - generic [ref=e31]:
+        - button "CD1 — Đồ ăn, đồ uống và đặc sản Phường Quy Nhơn · Ven biển" [ref=e32] [cursor=pointer]:
+          - text: CD1 — Đồ ăn, đồ uống và đặc sản
+          - generic [ref=e33]: Phường Quy Nhơn · Ven biển
+        - button "CD2 — Dịch vụ du lịch Xã Nhơn Lý · Ven biển" [ref=e34] [cursor=pointer]:
+          - text: CD2 — Dịch vụ du lịch
+          - generic [ref=e35]: Xã Nhơn Lý · Ven biển
+        - button "CD3 — Nông sản đặc sản Xã Chư Păh · Cao nguyên" [ref=e36] [cursor=pointer]:
+          - text: CD3 — Nông sản đặc sản
+          - generic [ref=e37]: Xã Chư Păh · Cao nguyên
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - heading "Hộ kinh doanh Đặc sản Biển Xanh" [level=4] [ref=e40]
+          - generic [ref=e41]: Bà Nguyễn Thị Bảy · thế hệ kế cận Chị Trần Thu Hà (30 tuổi)
+        - generic [ref=e42]:
+          - paragraph [ref=e43]: "Động lực chuyển đổi: Nhà hàng và khách sạn yêu cầu nhà cung cấp có pháp nhân và hoá đơn mới đưa vào danh sách mua hàng chính thức. Hộ cũng muốn xây thương hiệu đặc sản riêng."
+          - generic [ref=e44]:
+            - generic [ref=e45]:
+              - generic [ref=e46]: Người thao tác hằng ngày
+              - generic [ref=e47]: Chị Trần Thu Hà — Quản kênh online và làm việc với khách sạn
+            - generic [ref=e48]:
+              - generic [ref=e49]: Người lớn tuổi trong hộ
+              - generic [ref=e50]: Bà Nguyễn Thị Bảy (58 tuổi) — Chế biến, đứng quầy khi con đi giao hàng
+              - generic [ref=e51]: Ông Trần Văn Tám (61 tuổi) — Chế biến, phơi cá
+          - generic [ref=e52]: "Vì bố mẹ cũng phải đứng quầy khi con đi vắng, ứng dụng có hai mức giao diện trên cùng một tài khoản: chế độ đơn giản chữ lớn chỉ Bán và Xem tiền, và chế độ đầy đủ cho thế hệ kế cận. Bấm nút Aa trên ứng dụng để đổi."
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e55]: Doanh thu từ đầu năm
+          - generic [ref=e56]: 1,0 tỷ
+          - generic [ref=e57]: tính từ giao dịch
+        - generic [ref=e58]:
+          - generic [ref=e59]: Ngưỡng máy tính tiền
+          - generic [ref=e60]: Thuộc diện
+          - generic [ref=e61]: ước cả năm 1,6 tỷ
+        - generic [ref=e62]:
+          - generic [ref=e63]: Thuế tạm tính quý 3
+          - generic [ref=e64]: 13tr
+          - generic [ref=e65]: cập nhật khi bán
+        - generic [ref=e66]:
+          - generic [ref=e67]: Chi phí năm 1 · giá sỉ
+          - generic [ref=e68]: 6,5tr
+          - generic [ref=e69]: gồm triển khai tại chỗ
+        - generic [ref=e70]:
+          - generic [ref=e71]: Hộ tự trả từ năm 3
+          - generic [ref=e72]: 3,4tr
+          - generic [ref=e73]: mỗi năm, biết trước
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - generic [ref=e77]: Ngày đầu tiên
+            - text: Thiết lập
+          - generic [ref=e78]:
+            - text: 45′
+            - generic [ref=e79]: một lần, có người làm cùng
+          - generic [ref=e80]:
+            - generic [ref=e81]: Hộ dùng gì
+            - text: Cài ứng dụng cho con gái; nhập 5–7 mặt bán chạy trước; nối Zalo và một sàn; khai báo 3 khách sạn đang giao định kỳ
+          - generic [ref=e82]:
+            - generic [ref=e83]: Ai cài · ai đào tạo
+            - text: Cán bộ hỗ trợ địa bàn đến tận cửa hàngCán bộ hỗ trợ, kèm con gái 90 phút, bố mẹ chỉ xem
+          - generic [ref=e84]:
+            - generic [ref=e85]: Điều gì khiến hộ bỏ cuộc
+            - text: Bố mẹ thấy phần mềm đòi nhập quá nhiều thứ cho từng loại cá khô, nước mắm — mỗi loại một giá, một đơn vị tính — nên đòi dừng ngay buổi đầu vì "gõ còn lâu hơn ghi sổ".
+          - generic [ref=e86]:
+            - generic [ref=e87]: Phòng ngừa
+            - text: Chỉ cho con gái nhập 5–7 mặt bán chạy nhất trước, phần còn lại để sau; ai khai thác kênh nào thì chỉ nhập mặt của kênh đó.
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - generic [ref=e90]: 30 ngày đầu
+            - text: Vận hành ban đầu
+          - generic [ref=e91]:
+            - text: 8′
+            - generic [ref=e92]: mỗi ngày — quét mã khoảng 10 giây một đơn, cuối ngày soát 5 phút
+          - generic [ref=e93]:
+            - generic [ref=e94]: Hộ dùng gì
+            - text: Bán quầy quét mã phát hành hoá đơn từ máy tính tiền; đơn sàn tự về; tồn kho một con số dùng chung ba kênh; nhắc công nợ khách sạn
+          - generic [ref=e95]:
+            - generic [ref=e96]: Ai cài · ai đào tạo
+            - text: Không phải cài thêmCán bộ ghé lại 2 lần trong tháng đầu
+          - generic [ref=e97]:
+            - generic [ref=e98]: Điều gì khiến hộ bỏ cuộc
+            - text: Khách sạn, nhà hàng đang quen nhận hàng qua điện thoại, giấy tay; nếu nhập đơn vào phần mềm chậm hơn gọi điện thì con gái sẽ bỏ phần mềm sau hai tuần bận mùa khách.
+          - generic [ref=e99]:
+            - generic [ref=e100]: Phòng ngừa
+            - text: Đặt mục tiêu chỉ nhập đơn khách sạn vào cuối ngày, không bắt nhập ngay khi nhận máy; kèm nhắc việc này vào buổi giao hàng định kỳ hằng tuần.
+        - generic [ref=e101]:
+          - generic [ref=e102]:
+            - generic [ref=e103]: Kỳ kê khai đầu tiên
+            - text: Nghĩa vụ thuế
+          - generic [ref=e104]:
+            - text: 25′
+            - generic [ref=e105]: một lần trong kỳ
+          - generic [ref=e106]:
+            - generic [ref=e107]: Hộ dùng gì
+            - text: Đường kê khai 5 bước trên điện thoại; hệ thống soát trước hoá đơn chưa truyền; dẫn sang ứng dụng thuế điện tử để hộ tự bấm nộp; chụp lại mã biên nhận
+          - generic [ref=e108]:
+            - generic [ref=e109]: Ai cài · ai đào tạo
+            - text: —Chuyên viên nghiệp vụ thuế lưu động ngồi cùng tại cơ sở
+          - generic [ref=e110]:
+            - generic [ref=e111]: Điều gì khiến hộ bỏ cuộc
+            - text: Đến kỳ kê khai, hộ lo sợ số liệu trên phần mềm khác sổ tay sẽ bị phạt nên muốn quay về ghi tay cho "ổn".
+          - generic [ref=e112]:
+            - generic [ref=e113]: Phòng ngừa
+            - text: Trước kỳ kê khai, cán bộ hỗ trợ ngồi đối chiếu số phần mềm với sổ tay cho hộ kiểm tra chính họ, sai ở đâu sửa ở đấy, hộ phải tự thấy hai bên khớp mới yên tâm.
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - generic [ref=e116]: 12 tháng
+            - text: Tăng trưởng
+          - generic [ref=e117]:
+            - text: 6′
+            - generic [ref=e118]: mỗi ngày
+          - generic [ref=e119]:
+            - generic [ref=e120]: Hộ dùng gì
+            - text: Thêm hai sàn; hồ sơ an toàn thực phẩm và truy xuất theo lô để vào danh sách nhà cung cấp của khu nghỉ dưỡng; báo cáo kênh nào lãi hơn
+          - generic [ref=e121]:
+            - generic [ref=e122]: Ai cài · ai đào tạo
+            - text: —Tự chủ; hỗ trợ theo yêu cầu
+          - generic [ref=e123]:
+            - generic [ref=e124]: Điều gì khiến hộ bỏ cuộc
+            - text: Sau một năm nếu hộ không thấy phần mềm giúp bán được thêm hay thu tiền nhanh hơn, họ sẽ coi đó là việc thừa của con gái và cho dừng.
+          - generic [ref=e125]:
+            - generic [ref=e126]: Phòng ngừa
+            - text: "Cuối năm in ra cho bố mẹ xem vài con số đơn giản: bao nhiêu khách mua lại, kênh nào lãi hơn; có con số đứng bằng tiền thì hộ mới tiếp tục."
+      - heading "Chi phí từng cấu phần cho chân dung này" [level=3] [ref=e127]
+      - table [ref=e130]:
+        - rowgroup [ref=e131]:
+          - row [ref=e132]:
+            - columnheader "Cấu phần" [ref=e133]
+            - columnheader "Giá niêm yết" [ref=e134]
+            - columnheader "Giá sỉ Chương trình" [ref=e135]
+            - columnheader "Hộ tự trả từ năm 3" [ref=e136]
+        - rowgroup [ref=e137]:
+          - row [ref=e138]:
+            - cell "Kê khai và nộp thuế điện tử (eTax Mobile, Cổng thuế điện tử) miễn phí quốc gia Nhà nước cung cấp" [ref=e139]:
+              - text: Kê khai và nộp thuế điện tử (eTax Mobile, Cổng thuế điện tử)
+              - generic [ref=e140]: miễn phí quốc gia
+              - generic [ref=e141]: Nhà nước cung cấp
+            - cell "0đ" [ref=e142]
+            - cell "0đ" [ref=e143]
+            - cell "0đ" [ref=e144]
+          - row [ref=e145]:
+            - cell "Phần mềm kế toán và hoá đơn cơ bản dùng chung miễn phí quốc gia Điều 10 Nghị định 20/2026/NĐ-CP — khi nền tảng vận hành" [ref=e146]:
+              - text: Phần mềm kế toán và hoá đơn cơ bản dùng chung
+              - generic [ref=e147]: miễn phí quốc gia
+              - generic [ref=e148]: Điều 10 Nghị định 20/2026/NĐ-CP — khi nền tảng vận hành
+            - cell "0đ" [ref=e149]
+            - cell "0đ" [ref=e150]
+            - cell "0đ" [ref=e151]
+          - row [ref=e152]:
+            - cell "Chữ ký số cho hộ kinh doanh miễn phí quốc gia Theo chương trình miễn phí đang có của nhà cung cấp" [ref=e153]:
+              - text: Chữ ký số cho hộ kinh doanh
+              - generic [ref=e154]: miễn phí quốc gia
+              - generic [ref=e155]: Theo chương trình miễn phí đang có của nhà cung cấp
+            - cell "0đ" [ref=e156]
+            - cell "0đ" [ref=e157]
+            - cell "0đ" [ref=e158]
+          - row [ref=e159]:
+            - cell "Nối kênh bán và hợp nhất đơn (sàn thương mại điện tử, mạng xã hội, app giao đồ ăn, nền tảng đặt phòng)" [ref=e160]
+            - cell "2.400.000đ" [ref=e161]
+            - cell "1.440.000đ" [ref=e162]
+            - cell "1.200.000đ" [ref=e163]
+          - row [ref=e164]:
+            - cell "Tồn kho đa kênh, quản theo lô, truy xuất nguồn gốc" [ref=e165]
+            - cell "1.320.000đ" [ref=e166]
+            - cell "780.000đ" [ref=e167]
+            - cell "660.000đ" [ref=e168]
+          - row [ref=e169]:
+            - cell "Trợ lý tiếng Việt hai lớp, trực 24/7, cảnh báo trước mốc nghĩa vụ" [ref=e170]
+            - cell "1.560.000đ" [ref=e171]
+            - cell "900.000đ" [ref=e172]
+            - cell "780.000đ" [ref=e173]
+          - row [ref=e174]:
+            - cell "Bảng điều khiển doanh thu, công nợ, nghĩa vụ thuế tạm tính theo thời gian thực" [ref=e175]
+            - cell "600.000đ" [ref=e176]
+            - cell "480.000đ" [ref=e177]
+            - cell "300.000đ" [ref=e178]
+          - row [ref=e179]:
+            - cell "Hồ sơ an toàn thực phẩm, nhãn mác, truy xuất theo lô cho khách hàng tổ chức" [ref=e180]
+            - cell "960.000đ" [ref=e181]
+            - cell "600.000đ" [ref=e182]
+            - cell "480.000đ" [ref=e183]
+          - row [ref=e184]:
+            - cell "Cài đặt tại cơ sở, nhập dữ liệu ban đầu, đào tạo hai thế hệ trong hộ một lần, năm 1" [ref=e185]:
+              - text: Cài đặt tại cơ sở, nhập dữ liệu ban đầu, đào tạo hai thế hệ trong hộ
+              - generic [ref=e186]: một lần, năm 1
+            - cell "2.400.000đ" [ref=e187]
+            - cell "1.500.000đ" [ref=e188]
+            - cell "0đ" [ref=e189]
+          - row [ref=e190]:
+            - cell "Đồng hành kỳ kê khai đầu tiên tại cơ sở một lần, năm 1" [ref=e191]:
+              - text: Đồng hành kỳ kê khai đầu tiên tại cơ sở
+              - generic [ref=e192]: một lần, năm 1
+            - cell "1.200.000đ" [ref=e193]
+            - cell "750.000đ" [ref=e194]
+            - cell "0đ" [ref=e195]
+        - rowgroup [ref=e196]:
+          - row [ref=e197]:
+            - cell "Thuê bao hằng năm" [ref=e198]
+            - cell "6.840.000đ" [ref=e199]
+            - cell "4.200.000đ" [ref=e200]
+            - cell "3.420.000đ" [ref=e201]
+          - row [ref=e202]:
+            - cell "Triển khai tại chỗ, chỉ năm 1" [ref=e203]
+            - cell "3.600.000đ" [ref=e204]
+            - cell "2.250.000đ" [ref=e205]
+            - cell "0đ" [ref=e206]
+          - row [ref=e207]:
+            - cell "Năm thứ nhất" [ref=e208]
+            - cell "10.440.000đ" [ref=e209]
+            - cell "6.450.000đ" [ref=e210]
+            - cell "—" [ref=e211]
+    - contentinfo [ref=e212]:
+      - paragraph [ref=e213]:
+        - text: "SoloMatrix v3 Gia Lai — bản mô phỏng phục vụ đối thoại thị trường, cập nhật 17/08/2026. Ba bề mặt dùng chung một kho dữ liệu:"
+        - link "ứng dụng của hộ" [ref=e214] [cursor=pointer]:
+          - /url: mobile.html
+        - text: ·
+        - link "cổng Chương trình" [ref=e215] [cursor=pointer]:
+          - /url: b2g.html
+        - text: · hồ sơ này.
+      - paragraph [ref=e216]:
+        - text: Số liệu ba chân dung là dữ liệu mẫu sinh xác định, không nhập tay — mở lại luôn ra đúng như vậy.
+        - button "Nạp lại dữ liệu mẫu" [ref=e217] [cursor=pointer]

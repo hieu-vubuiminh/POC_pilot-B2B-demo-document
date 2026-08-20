@@ -1,0 +1,131 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: Đối thoại thị trường · Chương trình Kế nghiệp số Gia Lai
+      - heading "Hồ sơ giải pháp" [level=1] [ref=e5]
+      - generic [ref=e6]: Bản mô phỏng để hội đồng đối chiếu trực tiếp với Bài toán đặt hàng. Mọi mục dưới đây neo về số điều khoản của chính bài toán, và mọi con số đều tính từ dữ liệu ba chân dung chứ không nhập tay.
+  - navigation [ref=e7]:
+    - generic [ref=e8]:
+      - button "Ba chân dung, bốn mốc Mục III" [ref=e218] [cursor=pointer]:
+        - text: Ba chân dung, bốn mốc
+        - generic [ref=e219]: Mục III
+      - button "Giá và mô hình giá IV.9 · V.2" [ref=e220] [cursor=pointer]:
+        - text: Giá và mô hình giá
+        - generic [ref=e221]: IV.9 · V.2
+      - button "Hệ sinh thái kết nối IV.3" [ref=e222] [cursor=pointer]:
+        - text: Hệ sinh thái kết nối
+        - generic [ref=e223]: IV.3
+      - button "Đội tại chỗ IV.6 · V.3" [ref=e224] [cursor=pointer]:
+        - text: Đội tại chỗ
+        - generic [ref=e225]: IV.6 · V.3
+      - button "Nhân rộng V.1" [ref=e226] [cursor=pointer]:
+        - text: Nhân rộng
+        - generic [ref=e227]: V.1
+      - button "Kịch bản demo VI.1(e)" [ref=e228] [cursor=pointer]:
+        - text: Kịch bản demo
+        - generic [ref=e229]: VI.1(e)
+      - button "Ma trận đối chiếu toàn bộ Mục IV" [ref=e230] [cursor=pointer]:
+        - text: Ma trận đối chiếu
+        - generic [ref=e231]: toàn bộ Mục IV
+      - button "Bản đồ màn hình toàn sản phẩm" [ref=e232] [cursor=pointer]:
+        - text: Bản đồ màn hình
+        - generic [ref=e233]: toàn sản phẩm
+      - button "Đường đi dữ liệu IV.3 · IV.4" [ref=e234] [cursor=pointer]:
+        - text: Đường đi dữ liệu
+        - generic [ref=e235]: IV.3 · IV.4
+  - generic [ref=e27]:
+    - generic [ref=e236]:
+      - heading "Tư vấn ngược V.1 — tách gói theo ngành hay một gói chung cấu hình được" [level=2] [ref=e237]
+      - paragraph [ref=e238]: Một bộ khung, cấu hình theo nghề. Ba chân dung chỉ là ba cấu hình đầu tiên.
+      - generic [ref=e239]:
+        - generic [ref=e240]:
+          - generic [ref=e241]: Hộ chuyển đổi thành doanh nghiệp
+          - generic [ref=e242]: "3.000"
+          - generic [ref=e243]: trên 32.500 toàn tỉnh
+        - generic [ref=e244]:
+          - generic [ref=e245]: Doanh nghiệp một người ứng dụng AI
+          - generic [ref=e246]: "1.200"
+          - generic [ref=e247]: trên 3.680 theo kế hoạch
+        - generic [ref=e248]:
+          - generic [ref=e249]: Mô hình nghề đã đóng gói sẵn
+          - generic [ref=e250]: "8"
+          - generic [ref=e251]: theo danh mục của Chương trình
+        - generic [ref=e252]:
+          - generic [ref=e253]: Đàm phán mua chung
+          - generic [ref=e254]: "4.200"
+          - generic [ref=e255]: gộp hai nhóm, thay vì hai lần rời
+      - generic [ref=e256]: "Trả lời trực tiếp: nên dùng một gói chung cấu hình được, không tách gói theo ngành. Lý do nằm ở kỹ thuật: sáu khối nghiệp vụ dưới đây giống nhau ở mọi nghề, chỉ khác cấu hình. Tách gói theo ngành làm giá đắt lên và làm Chương trình phải quản nhiều hợp đồng hơn mà không được thêm gì."
+      - generic [ref=e257]:
+        - heading "Sáu khối chung của mọi nghề" [level=4] [ref=e259]
+        - generic [ref=e261]:
+          - generic [ref=e262]: Nối kênh khách
+          - generic [ref=e263]: Ghi doanh thu và xuất hoá đơn
+          - generic [ref=e264]: Tồn kho hoặc lịch tài nguyên
+          - generic [ref=e265]: Chứng từ đầu vào
+          - generic [ref=e266]: Trợ lý hai lớp
+          - generic [ref=e267]: Kê khai và mốc nghĩa vụ
+      - generic [ref=e268]:
+        - generic [ref=e269]:
+          - heading "Tám lĩnh vực Chương trình đã liệt kê" [level=4] [ref=e270]
+          - generic [ref=e271]: Slide Chương trình phối hợp Hội Doanh nhân trẻ — 08 lĩnh vực đã liệt kê sẵn
+        - table [ref=e273]:
+          - rowgroup [ref=e274]:
+            - row [ref=e275]:
+              - columnheader "Lĩnh vực" [ref=e276]
+              - columnheader "Cần thêm gì so với bộ khung" [ref=e277]
+              - columnheader "Dùng cấu hình gần với" [ref=e278]
+              - columnheader "Nhóm thuế" [ref=e279]
+          - rowgroup [ref=e280]:
+            - row [ref=e281]:
+              - 'cell "01 Dịch vụ kỹ thuật nông nghiệp: bay không người lái phun thuốc và gieo hạt, đo đạc lập bản đồ lô thửa, tư vấn dinh dưỡng cây trồng" [ref=e282]'
+              - cell "Lịch tài nguyên theo thiết bị và theo thửa" [ref=e283]
+              - cell "CD2" [ref=e284]
+              - cell "Dịch vụ, xây dựng không bao thầu nguyên vật liệu" [ref=e286]
+            - row [ref=e287]:
+              - cell "02 Nội dung số, thiết kế, thương mại điện tử và bán hàng xuyên biên giới cho nông sản, đồ gỗ, thủ công mỹ nghệ" [ref=e288]
+              - cell "Hợp đồng theo gói việc, thanh toán từng chặng" [ref=e289]
+              - cell "CD1" [ref=e290]
+              - cell "Dịch vụ, xây dựng không bao thầu nguyên vật liệu" [ref=e292]
+            - row [ref=e293]:
+              - cell "03 Sửa chữa, bảo trì thiết bị công nghiệp và thiết bị chế biến nông sản" [ref=e294]
+              - cell "Phiếu việc tại hiện trường, vật tư thay thế" [ref=e295]
+              - cell "CD3" [ref=e296]
+              - cell "Dịch vụ, xây dựng không bao thầu nguyên vật liệu" [ref=e298]
+            - row [ref=e299]:
+              - cell "04 Logistics chặng cuối, gom hàng, dịch vụ kho và chuỗi lạnh quy mô nhỏ" [ref=e300]
+              - cell "Chuyến và tải trọng, nhiệt độ theo lô" [ref=e301]
+              - cell "CD1" [ref=e302]
+              - cell "Sản xuất, vận tải, dịch vụ có gắn với hàng hoá" [ref=e304]
+            - row [ref=e305]:
+              - cell "05 Du lịch trải nghiệm, lưu trú nhỏ, dịch vụ dẫn tour chuyên đề văn hoá và thiên nhiên" [ref=e306]
+              - cell "Không cần thêm — dùng đúng cấu hình chân dung 2" [ref=e307]
+              - cell "CD2" [ref=e308]
+              - cell "Dịch vụ, xây dựng không bao thầu nguyên vật liệu" [ref=e310]
+            - row [ref=e311]:
+              - 'cell "06 Chế biến quy mô nhỏ đạt chuẩn an toàn thực phẩm: gia vị, trái cây sấy, cà phê đặc sản, dược liệu sơ chế" [ref=e312]'
+              - cell "Không cần thêm — dùng đúng cấu hình chân dung 1" [ref=e313]
+              - cell "CD1" [ref=e314]
+              - cell "Sản xuất, vận tải, dịch vụ có gắn với hàng hoá" [ref=e316]
+            - row [ref=e317]:
+              - cell "07 Dịch vụ chăm sóc người cao tuổi tại nhà và dịch vụ y tế, phục hồi chức năng cơ bản" [ref=e318]
+              - cell "Lịch theo người chăm sóc, hồ sơ chứng chỉ hành nghề" [ref=e319]
+              - cell "CD2" [ref=e320]
+              - cell "Dịch vụ, xây dựng không bao thầu nguyên vật liệu" [ref=e322]
+            - row [ref=e323]:
+              - cell "08 Dịch vụ kế toán, pháp lý, nhân sự thuê ngoài cho doanh nghiệp siêu nhỏ" [ref=e324]
+              - cell "Nhiều khách trên một tài khoản, phân tách dữ liệu từng khách" [ref=e325]
+              - cell "CD3" [ref=e326]
+              - cell "Dịch vụ, xây dựng không bao thầu nguyên vật liệu" [ref=e328]
+      - generic [ref=e329]: "Năm trong tám lĩnh vực chạy được ngay bằng cấu hình của ba chân dung hiện có. Ba lĩnh vực còn lại cần thêm đúng một khối: lịch theo thiết bị, phiếu việc hiện trường, hoặc nhiều khách trên một tài khoản."
+    - contentinfo [ref=e330]:
+      - paragraph [ref=e331]:
+        - text: "SoloMatrix v3 Gia Lai — bản mô phỏng phục vụ đối thoại thị trường, cập nhật 17/08/2026. Ba bề mặt dùng chung một kho dữ liệu:"
+        - link "ứng dụng của hộ" [ref=e332] [cursor=pointer]:
+          - /url: mobile.html
+        - text: ·
+        - link "cổng Chương trình" [ref=e333] [cursor=pointer]:
+          - /url: b2g.html
+        - text: · hồ sơ này.
+      - paragraph [ref=e334]:
+        - text: Số liệu ba chân dung là dữ liệu mẫu sinh xác định, không nhập tay — mở lại luôn ra đúng như vậy.
+        - button "Nạp lại dữ liệu mẫu" [ref=e335] [cursor=pointer]

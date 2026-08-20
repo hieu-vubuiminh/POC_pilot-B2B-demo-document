@@ -1,0 +1,174 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - button "Đổi chân dung hộ" [ref=e5] [cursor=pointer]: ☰
+      - generic [ref=e6]:
+        - generic [ref=e176]: Hộ kinh doanh Đặc sản Biển Xanh
+        - generic [ref=e177]: CD1 · Phường Quy Nhơn · Đồ ăn, đồ uống và đặc sản
+      - button "Đổi cỡ chữ" [ref=e9] [cursor=pointer]: Aa
+    - generic [ref=e10]:
+      - generic [ref=e12]: Có mạng — dữ liệu đang gửi lên
+      - button "✈︎ Chế độ máy bay" [ref=e13] [cursor=pointer]
+      - generic [ref=e14]: đã gửi hết
+  - main [ref=e15]:
+    - generic [ref=e178]:
+      - generic [ref=e179]:
+        - heading "Bán hàng và khách" [level=2] [ref=e180]
+        - generic [ref=e181]: 4 mục
+      - generic [ref=e182]:
+        - button "📥 Hộp thư đến đơn, tiền, tin nhắn từ ngoài vào ›" [ref=e183] [cursor=pointer]:
+          - generic [ref=e184]: 📥
+          - generic [ref=e185]:
+            - generic [ref=e186]: Hộp thư đến
+            - generic [ref=e187]: đơn, tiền, tin nhắn từ ngoài vào
+          - generic [ref=e188]: ›
+        - button "💌 Hội thoại với khách (1 chưa trả lời) tin nhắn khách gửi ›" [ref=e189] [cursor=pointer]:
+          - generic [ref=e190]: 💌
+          - generic [ref=e191]:
+            - generic [ref=e192]: Hội thoại với khách (1 chưa trả lời)
+            - generic [ref=e193]: tin nhắn khách gửi
+          - generic [ref=e194]: ›
+        - button "👥 Khách hàng 13 khách · 6 khách tổ chức ›" [ref=e195] [cursor=pointer]:
+          - generic [ref=e196]: 👥
+          - generic [ref=e197]:
+            - generic [ref=e198]: Khách hàng
+            - generic [ref=e199]: 13 khách · 6 khách tổ chức
+          - generic [ref=e200]: ›
+        - button "↩️ Trả hàng, đổi hàng chưa có lượt trả ›" [ref=e201] [cursor=pointer]:
+          - generic [ref=e202]: ↩️
+          - generic [ref=e203]:
+            - generic [ref=e204]: Trả hàng, đổi hàng
+            - generic [ref=e205]: chưa có lượt trả
+          - generic [ref=e206]: ›
+    - generic [ref=e207]:
+      - generic [ref=e208]:
+        - heading "Hàng hoá và kho" [level=2] [ref=e209]
+        - generic [ref=e210]: 4 mục
+      - generic [ref=e211]:
+        - button "🏷️ Danh mục hàng hoá 5 mặt hàng · sửa giá ›" [ref=e212] [cursor=pointer]:
+          - generic [ref=e213]: 🏷️
+          - generic [ref=e214]:
+            - generic [ref=e215]: Danh mục hàng hoá
+            - generic [ref=e216]: 5 mặt hàng · sửa giá
+          - generic [ref=e217]: ›
+        - button "📦 Nhập kho, kiểm kê, huỷ hỏng ghi mẻ chế biến, điều chỉnh lệch sổ ›" [ref=e218] [cursor=pointer]:
+          - generic [ref=e219]: 📦
+          - generic [ref=e220]:
+            - generic [ref=e221]: Nhập kho, kiểm kê, huỷ hỏng
+            - generic [ref=e222]: ghi mẻ chế biến, điều chỉnh lệch sổ
+          - generic [ref=e223]: ›
+        - button "🗑️ Huỷ hàng hỏng chưa có lần huỷ ›" [ref=e224] [cursor=pointer]:
+          - generic [ref=e225]: 🗑️
+          - generic [ref=e226]:
+            - generic [ref=e227]: Huỷ hàng hỏng
+            - generic [ref=e228]: chưa có lần huỷ
+          - generic [ref=e229]: ›
+        - button "🔎 Truy xuất lô cho bên mua chưa có lô bán ra ›" [ref=e230] [cursor=pointer]:
+          - generic [ref=e231]: 🔎
+          - generic [ref=e232]:
+            - generic [ref=e233]: Truy xuất lô cho bên mua
+            - generic [ref=e234]: chưa có lô bán ra
+          - generic [ref=e235]: ›
+    - generic [ref=e236]:
+      - generic [ref=e237]:
+        - heading "Tiền và sổ sách" [level=2] [ref=e238]
+        - generic [ref=e239]: 5 mục
+      - generic [ref=e240]:
+        - button "🧮 Kết ca và đếm tiền đối chiếu tiền cuối ngày ›" [ref=e241] [cursor=pointer]:
+          - generic [ref=e242]: 🧮
+          - generic [ref=e243]:
+            - generic [ref=e244]: Kết ca và đếm tiền
+            - generic [ref=e245]: đối chiếu tiền cuối ngày
+          - generic [ref=e246]: ›
+        - button "💳 Công nợ và đối soát 4 khoản · còn 61tr · 2 quá hạn ›" [ref=e247] [cursor=pointer]:
+          - generic [ref=e248]: 💳
+          - generic [ref=e249]:
+            - generic [ref=e250]: Công nợ và đối soát
+            - generic [ref=e251]: 4 khoản · còn 61tr · 2 quá hạn
+          - generic [ref=e252]: ›
+        - button "🧾 Khoản chi 5 khoản · 9,0tr · có khoản thiếu chứng từ ›" [ref=e253] [cursor=pointer]:
+          - generic [ref=e254]: 🧾
+          - generic [ref=e255]:
+            - generic [ref=e256]: Khoản chi
+            - generic [ref=e257]: 5 khoản · 9,0tr · có khoản thiếu chứng từ
+          - generic [ref=e258]: ›
+        - 'button "📑 Hoá đơn: điều chỉnh, thay thế, huỷ hoá đơn đã phát hành không sửa đè được ›" [ref=e259] [cursor=pointer]':
+          - generic [ref=e260]: 📑
+          - generic [ref=e261]:
+            - generic [ref=e262]: "Hoá đơn: điều chỉnh, thay thế, huỷ"
+            - generic [ref=e263]: hoá đơn đã phát hành không sửa đè được
+          - generic [ref=e264]: ›
+        - button "💰 Chi phí của tôi lộ trình 3 năm, biết trước từ đầu ›" [ref=e265] [cursor=pointer]:
+          - generic [ref=e266]: 💰
+          - generic [ref=e267]:
+            - generic [ref=e268]: Chi phí của tôi
+            - generic [ref=e269]: lộ trình 3 năm, biết trước từ đầu
+          - generic [ref=e270]: ›
+    - generic [ref=e271]:
+      - generic [ref=e272]:
+        - heading "Hệ thống và dữ liệu" [level=2] [ref=e273]
+        - generic [ref=e274]: 6 mục
+      - generic [ref=e275]:
+        - button "🔌 Kết nối kênh bán 3 nhóm chưa đủ danh mục tối thiểu ›" [ref=e276] [cursor=pointer]:
+          - generic [ref=e277]: 🔌
+          - generic [ref=e278]:
+            - generic [ref=e279]: Kết nối kênh bán
+            - generic [ref=e280]: 3 nhóm chưa đủ danh mục tối thiểu
+          - generic [ref=e281]: ›
+        - button "👤 Phân quyền người dùng 4 người dùng chung ứng dụng ›" [ref=e282] [cursor=pointer]:
+          - generic [ref=e283]: 👤
+          - generic [ref=e284]:
+            - generic [ref=e285]: Phân quyền người dùng
+            - generic [ref=e286]: 4 người dùng chung ứng dụng
+          - generic [ref=e287]: ›
+        - button "📱 Thiết bị và khôi phục mất máy có mất dữ liệu không ›" [ref=e288] [cursor=pointer]:
+          - generic [ref=e289]: 📱
+          - generic [ref=e290]:
+            - generic [ref=e291]: Thiết bị và khôi phục
+            - generic [ref=e292]: mất máy có mất dữ liệu không
+          - generic [ref=e293]: ›
+        - button "📜 Nhật ký thao tác 0 việc đã ghi · ai sửa gì ›" [ref=e294] [cursor=pointer]:
+          - generic [ref=e295]: 📜
+          - generic [ref=e296]:
+            - generic [ref=e297]: Nhật ký thao tác
+            - generic [ref=e298]: 0 việc đã ghi · ai sửa gì
+          - generic [ref=e299]: ›
+        - button "🏠 Hồ sơ hộ và người hỗ trợ cán bộ phụ trách địa bàn ›" [ref=e300] [cursor=pointer]:
+          - generic [ref=e301]: 🏠
+          - generic [ref=e302]:
+            - generic [ref=e303]: Hồ sơ hộ và người hỗ trợ
+            - generic [ref=e304]: cán bộ phụ trách địa bàn
+          - generic [ref=e305]: ›
+        - button "🔐 Dữ liệu của tôi xuất toàn bộ, chuyển nhà cung cấp khác ›" [ref=e306] [cursor=pointer]:
+          - generic [ref=e307]: 🔐
+          - generic [ref=e308]:
+            - generic [ref=e309]: Dữ liệu của tôi
+            - generic [ref=e310]: xuất toàn bộ, chuyển nhà cung cấp khác
+          - generic [ref=e311]: ›
+    - generic [ref=e312]:
+      - heading "Cài đặt" [level=2] [ref=e314]
+      - generic [ref=e315]:
+        - generic [ref=e316]:
+          - button "Chế độ đầy đủ" [ref=e317] [cursor=pointer]
+          - button "Chế độ đơn giản" [ref=e318] [cursor=pointer]
+        - generic [ref=e319]: "Chế độ đơn giản: chữ lớn, chỉ Bán, Tiền và Trợ lý — dành cho bố mẹ đứng quầy khi con đi vắng."
+        - button "Nạp lại dữ liệu mẫu" [ref=e320] [cursor=pointer]
+  - button "Hỏi trợ lý" [ref=e162] [cursor=pointer]: 💬
+  - navigation [ref=e163]:
+    - button "🛒 Bán" [ref=e321] [cursor=pointer]:
+      - generic [ref=e322]: 🛒
+      - text: Bán
+    - button "📦 Kho" [ref=e323] [cursor=pointer]:
+      - generic [ref=e324]: 📦
+      - text: Kho
+    - button "🚚 Đơn 3" [ref=e325] [cursor=pointer]:
+      - generic [ref=e326]: 🚚
+      - text: Đơn
+      - generic [ref=e327]: "3"
+    - button "💰 Tiền 3" [ref=e328] [cursor=pointer]:
+      - generic [ref=e329]: 💰
+      - text: Tiền
+      - generic [ref=e330]: "3"
+    - button "⋯ Thêm" [ref=e331] [cursor=pointer]:
+      - generic [ref=e332]: ⋯
+      - text: Thêm
